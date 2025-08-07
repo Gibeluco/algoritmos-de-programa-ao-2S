@@ -1,20 +1,18 @@
-/******************************************************************************
-
-Welcome to GDB Online.
-  GDB online is an online compiler and debugger tool for C, C++, Python, PHP, Ruby, 
-  C#, OCaml, VB, Perl, Swift, Prolog, Javascript, Pascal, COBOL, HTML, CSS, JS
-  Code, Compile, Run and Debug online from anywhere in world.
-
-*******************************************************************************/
 #include <stdio.h>
+#include <stdlib.h>
 
 int main()
 {
-    int numero, quadrado;
-    printf("Informe o primeiro numero:") ;
-    scanf ("%d", &numero) ;
-    quadrado = numero * numero;
-    printf("O quadrado do numero eh: %d\n", quadrado) ;
+    int a, b, c , x;
+    printf("informe o valor de a:");
+    scanf("%d", &a);
+    printf("informe o valor de b:");
+    scanf("%d", &b);
+    printf ("informe o valro de c:");
+    scanf("%d", &c);
+    x = 2 * ((a - c)/8) - b * 5;
+    printf ("valor de x: %d\n", x);
     return 0;
-    
+
+
 }
