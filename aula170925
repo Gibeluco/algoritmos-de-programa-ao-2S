@@ -1,0 +1,103 @@
+{
+   int ra;
+   double n1, n2, n3, media, me;
+   printf("Informe o RA do aluno:");
+   scanf("%d", &ra);
+   printf("Informe as tres notas do aluno:");
+   scanf("%lf %lf %lf", &n1, &n2, &n3);
+   printf("Informe a media dos exercicios:");
+   scanf("%lf", &me);
+   media = (n1 + n2*2 + n3*3 + me) /7;
+   printf("RA: %d\n", ra);
+   printf("Notas: %.2lf, %.2lf\n, %.2lf\n", n1, n2, n3);
+   printf("Media dos exercicios: %.2lf\n", me);
+   printf("Media Final: %.2lf\n", media);
+   if(media >= 60){
+        printf("Aluno aprovado!\n");
+       if (media >=90){
+    printf("Conceito A.\n");
+
+   }
+   else if (media >= 75 && media < 90){
+    printf("Conceito B.\n");
+
+   }
+   printf("Conceito C.\n");
+   }
+
+else{
+        printf("Aluno reprovado! \n");
+if(media >= 40 && media < 60){
+        printf("Conceito D.\n");
+  }
+   else{
+    printf("Conceito E.\n");
+    }
+  }
+
+   return 0;
+}
+
+
+exerc 2
+
+ int code;
+ printf("Informe o codigo determinado");
+ scanf("%d", &code);
+
+ if (code == 1){
+    printf("Alimento não-perecivel");
+
+   } else if (code == 2){
+       printf("alimento perecivel");
+
+   } else if (code == 3 ){
+       printf("Vestuario");
+
+   } else if (code == 4){
+       printf("Limpeza");
+   }
+   else if ("codigo invalido \n");
+
+}
+return 0;
+}
+
+exerc 3
+
+int main()
+{
+    int total, opcao, branco = 0, tinto = 0, rose = 0;
+    char ocpcao;
+    printf("Informeo vinho:");
+    scanf("%c", &opcao);
+    while (opcao != 'f')
+    {
+        switch (opcao){
+    case 'B':{
+    ++ branco;
+    break;
+    }
+    case 'T':{
+        ++tinto;
+        break;
+    }
+    case 'F':{
+        printf("Opcao invalida!\n");
+        break;
+    }
+        }
+        printf("Informe o vinho:");
+        scanf("%c", &opcao);
+    }
+    total = branco + tinto + rose;
+    printf("Total de vinhos: %d\n", total);
+    printf("Total de vinhos brancos: %d\n", branco);
+    printf("Total de vinhos tintos: %d\n", tinto);
+    printf("total de vinhos rose: %d\n", rose);
+
+    return 0;
+
+}
+
+
