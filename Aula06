@@ -1,0 +1,72 @@
+exercicio 1
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int num, cont = 1;
+    printf("Informe um numero:\n");
+    scanf("%d", &num);
+    if(num > 0){
+        while(cont <= num){
+            printf("%d\t", cont);
+            cont++;
+        }
+    }else{
+    printf("O numero deve ser positivo!\n");
+    }
+    return 0;
+}
+exercicio 2
+ #include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int num;
+    printf("Informe um numero:");
+    scanf("%d", &num);
+    if(num > 0){
+        while(num >= 1){
+            printf("%d\t", num);
+            num--;
+        }
+    }
+    else{
+        printf("O numero deve ser positivo!\n");
+    }
+return 0;
+}
+ exercicio 3
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+   int cont = 1, soma = 0, num;
+   while(cont <= 5){
+    printf("Informe o %d° numero:", cont);
+    scanf("%d", &num);
+    soma = soma + num;
+    cont++;
+   }
+   printf("Soma dos numeros: %d", soma);
+return 0;
+}
+exercicio 4 
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int cont = 1, soma = 0, media;
+    while(cont <= 10){
+        printf("Informe o %d° numero:", cont);
+        scanf("%d", &num);
+        soma = soma + num;
+        cont++;
+    }
+    media = soma / 10;
+    printf("Media: %d", media);
+    return 0;
+}
